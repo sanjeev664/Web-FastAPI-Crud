@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   <meta charset="UTF-8">
+   <title>Employee Form</title>
+</head>
+
+   <body>
+      
+      <form action = "{{ url_for('create_employee') }}" method = "POST">
+         <h3>Employee Information</h3>
+         Name<br>
+         <input type = "text" name = "employee_name" /></br>
+         <input type = "submit" value = "submit" /><br>
+      </form>
+      
+   </body>
+</html>

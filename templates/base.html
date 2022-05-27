@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} OnePage</title>
+    <!-- Favicons -->
+    <link href="{{ url_for('static',path ='img/favicon.png') }}" rel="icon">
+    <link href="{{ url_for('static',path ='img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- plugins CSS Files -->
+    <link href="{{url_for ('static' ,path ='/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{url_for ('static' ,path ='/plugins/animate-css/animate.css') }}" rel="stylesheet">
+    <link href="{{url_for ('static' ,path ='/plugins/fontawesome/css/all.css') }}" rel="stylesheet">
+    <link href="{{url_for ('static' ,path ='/plugins//fonts/Pe-icon-7-stroke.css') }}" rel="stylesheet">
+    <link href="{{url_for ('static' ,path ='/plugins/themify/css/themify-icons.css') }}" rel="stylesheet">
+    <link href="{{url_for ('static' ,path ='/plugins/slick-carousel/slick/slick.css') }}" rel="stylesheet">
+    <link href="{{url_for ('static' ,path ='/plugins/slick-carousel/slick/slick-theme.css') }}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{{url_for ('static' ,path ='css/style.css') }}" rel="stylesheet">
+
+    {% endblock %}
+
+</head>
+
+<body>
+    <!-- Header  -->
+    {% include 'include/header.html' %}
+    <!-- Page Content  -->
+    {% block page_content %}
+    {% endblock %}
+    <!-- Portfolio details Content  -->
+    {% block portfolio_content %}
+    {% endblock %}
+    
+    <!-- footer  -->
+    {% include 'include/footer.html' %}
+
+    {% block scripts %}
+    <!-- Json Viewer -->
+   
+    <!-- /plugins JS Files -->
+    <script src="{{ url_for ('static',path ='/plugins/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for ('static',path ='/plugins/bootstrap/js/popper.min.js') }}"></script>
+    <script src="{{ url_for ('static',path ='/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for ('static',path ='/plugins/slick-carousel/slick/slick.min.js') }}"></script>
+    <script src="{{ url_for ('static',path ='/js/jquery.easing.1.3.js') }}"></script>
+    <script src="{{ url_for ('static',path ='/plugins/google-map/gmap3.min.js') }}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwIQh7LGryQdDDi-A603lR8NqiF3R_ycA"></script>
+    <script src="{{ url_for ('static',path ='js/theme.js') }}"></script>
+    <script src="{{ url_for ('static',path ='/plugins/form/contact.js') }}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{{ url_for ('static',path ='js/main.js') }}"></script>
+
+    {% endblock %}
+</body>
+
+</html>

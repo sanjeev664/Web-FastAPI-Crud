@@ -1,0 +1,9 @@
+versions:
+  api: 0.0.1
+  data: 0.0.1
+  model: 0.0.1
+bucket:
+  name: "vivino-ds-models-testing"
+  model_path: "model/20211025_v2"
+  data_path: "model/20211025_v2"
+
